@@ -1,0 +1,24 @@
+GET http://localhost:3000/todos/?status=IN%20PROGRESS
+###
+
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{
+  "id":7,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO",
+  "category": "play",
+  "dueDate": "2021-12-22"
+}
+
+###
+PUT http://localhost:3000/todos/1
+Content-Type: application/json
+
+{ "status": "IN PROGRESS" }
+
+
+###
+DELETE http://localhost:3000/todos/6
